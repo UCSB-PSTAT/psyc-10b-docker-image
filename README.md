@@ -1,1 +1,1 @@
-# psyc-10b
+# psyc-10b-docker-image
