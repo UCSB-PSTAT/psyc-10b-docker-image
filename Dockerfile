@@ -18,8 +18,12 @@ RUN R -e "install.packages(c('GGally','ggridges','viridis'))"
 #-- Misc utilities for psy 10b Summer Sessions A
 RUN R -e "install.packages(c('ggplot2','lsr','effsize','dplyr','tidyr','psych','data.table'))"
 
+#-- Install effectsize package Requested by Vinne Wu 6-30-2021 (summer sessions A requirement)
+RUN R -e "install.packages(c('effectsize'))"
+
 #-- Install R Kernel for Jupyter (summer sessions A requirement)
 RUN R -e "install.packages(c('IRkernel'))"
+
 
 USER $NB_USER
 
